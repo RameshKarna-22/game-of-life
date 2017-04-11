@@ -177,12 +177,7 @@
             </extension>
         </extensions>
     </build>
-     <distributionManagement>
-        <snapshotRepository>
-<id>demo</id>
-<url>http://54.149.191.63:8080/nexus-2.14.4-03/content/repositories/demo</url>
-</snapshotRepository>
-</distributionManagement>
+    
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -213,6 +208,12 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+    <distributionManagement>
+  <repository>
+    <id>demo</id>
+    <url>http://54.149.191.63:8080/nexus-2.14.4-03/content/repositories/demo</url>
+  </repository>
+</distributionManagement>
 
     <modules>
         <module>gameoflife-build</module>
